@@ -2,8 +2,8 @@
 /*font-family: 'Playfair Display', serif;*/
 
 nav {
-  float: right;
-  margin-right: 200px;
+  width: 500px;
+  margin-left: 600px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
