@@ -1,6 +1,14 @@
 /*font-family: 'Muli', sans-serif;*/
 /*font-family: 'Playfair Display', serif;*/
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.7;
+}
 #links {
   width: 600px;
   margin-left: 700px;
@@ -28,12 +36,10 @@
   color: #009900;
 }
 
-h1 {
-  font-family: 'Pathway Gothic One', sans-serif;
-}
+
 
 #home h1 {
-  margin-left: -200px;
+  margin-left: -300px;
 }
 
 #main_photo {
@@ -49,4 +55,10 @@ h1 {
 .page {
   height: 100%;
   width: 20%;
+  float: left;
 }
+
+#about {
+  margin-top: 40px;
+}
+
