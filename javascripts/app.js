@@ -2,6 +2,10 @@ $(function(){
   var windowWidth = $(window).width();
   $("#main_container").css("width", (windowWidth * 5));
 
+  $(window).on("resize", function(){
+    location.reload();
+  })
+
   $('#links').animate({
   opacity: '+=1'
   }, 1500);
@@ -42,7 +46,7 @@ $(function(){
   }, 300)}, 1500);
 
 
-  if (windowWidth < 800) {
+  if (windowWidth < 1000) {
 
     $("#home_link").click(function() {
         $('html, body').animate({
@@ -108,12 +112,4 @@ $(function(){
     });
 
   }
-
-  
-
-  
-
-  
-
-  
 })

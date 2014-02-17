@@ -120,6 +120,11 @@ span {
     margin-right: auto;
   }
 
+  #nav_bar {
+    background-color: white;
+    z-index: 1;
+  }
+
   #main_photo {
     margin: 0 auto;
     height: 237px;
@@ -129,8 +134,18 @@ span {
 
 @media (max-width: 1100px){
   #links {
-    position: relative;
-    margin: 0 auto;
+    position: none;
+    margin-left: 0px;
+  }
+
+  nav {
+    margin-top: -65px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
   }
 
   #main_photo {
@@ -141,6 +156,10 @@ span {
   
   .page {
     float: none;
+  }
+
+  #experience {
+    line-height: initial;
   }
 }
 
