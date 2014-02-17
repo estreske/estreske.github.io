@@ -9,6 +9,12 @@ p {
   font-family: 'Playfair Display', serif;
   line-height: 1.7;
 }
+
+body {
+  background: url("../images/panorama3.jpg");
+  background-size: cover;
+  background-repeat: none
+}
 #links {
   width: 600px;
   margin-left: 700px;
@@ -56,10 +62,11 @@ p {
   height: 100%;
   width: 20%;
   float: left;
+  margin-top: 60px;
 }
 
 #about {
-  margin-top: 40px;
+
 }
 
 #projects {
@@ -88,6 +95,15 @@ p {
 }
 
 #resume {
-  margin-top: 60px;
+  
+}
+
+#contact a {
+  text-decoration: none;
+  color: black;
+}
+
+#contact a:hover {
+  color: #009900;
 }
 
