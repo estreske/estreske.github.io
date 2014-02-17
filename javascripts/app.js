@@ -41,35 +41,79 @@ $(function(){
     opacity: '+=1'
   }, 300)}, 1500);
 
-  $("#home_link").on('click', function(){
+
+  if (windowWidth < 800) {
+
+    $("#home_link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1000);
+    });
+
+    $("#about_link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1000);
+    });
+
+    $("#projects_link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 1000);
+    });
+
+    $("#experience_link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#experience").offset().top
+        }, 1000);
+    });
+
+    $("#contact_link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1000);
+    });
+  }
+
+  else {
+
+    $("#home_link").on('click', function(){
     $('html, body').animate({
         scrollLeft: ($('#home').offset().left)
       }, 1000);
-  });
+    });
 
-  $("#about_link").on('click', function(){
-    $('html, body').animate({
-        scrollLeft: ($('#about').offset().left)
-      }, 1000);
-  });
+    $("#about_link").on('click', function(){
+      $('html, body').animate({
+          scrollLeft: ($('#about').offset().left)
+        }, 1000);
+    });
 
-  $("#projects_link").on('click', function(){
+    $("#projects_link").on('click', function(){
     $('html, body').animate({
         scrollLeft: ($('#projects').offset().left)
       }, 1000);
-  });
+    });
 
-  $("#experience_link").on('click', function(){
+    $("#experience_link").on('click', function(){
     $('html, body').animate({
         scrollLeft: ($('#experience').offset().left)
       }, 1000);
-  });
+    });
 
-  $("#contact_link").on('click', function(){
+    $("#contact_link").on('click', function(){
     $('html, body').animate({
         scrollLeft: ($('#contact').offset().left)
       }, 1000);
-  });
+    });
+
+  }
+
+  
+
+  
+
+  
 
   
 })
