@@ -37,10 +37,9 @@ p, li{
   color: #009900;
 }
 
-
-
 #home h1 {
-  margin-left: -300px;
+  margin-left: -450px;
+  font-size: 3em;
 }
 
 #main_photo {
@@ -93,6 +92,10 @@ p, li{
   line-height: 0.8;
 }
 
+#experience h2 {
+  color: #009900;
+}
+
 span {
   text-decoration: underline
 }
@@ -104,5 +107,9 @@ span {
 
 #contact a:hover {
   color: #009900;
+}
+
+#contact i {
+  margin: 0 auto;
 }
 

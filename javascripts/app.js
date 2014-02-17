@@ -8,12 +8,12 @@ $(function(){
 
   setTimeout(function(){
     $('#name').animate({
-  marginLeft: '+=300px'
+  marginLeft: '+=550px'
   }, 300)}, 1200);
 
   setTimeout(function(){
     $('#dev').animate({
-  marginLeft: '+=300px'
+  marginLeft: '+=550px'
   }, 300)}, 1500);
 
   setTimeout(function(){
