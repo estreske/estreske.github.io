@@ -1,11 +1,14 @@
 /*font-family: 'Muli', sans-serif;*/
 /*font-family: 'Playfair Display', serif;*/
 
-nav {
-  width: 500px;
-  margin-left: 600px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+#links {
+  width: 600px;
+  margin-left: 700px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  font-size: 1.5em;
+  opacity: 0;
+  position: fixed;
 }
 
 #links li {
@@ -14,8 +17,36 @@ nav {
   list-style-type: none;
   margin-left: 20px;
   margin-right: 20px;
+  opacity: 0;
+}
+
+#links li:first-child {
+  margin-left: 55px;
+}
+
+#links li:hover {
+  color: #009900;
 }
 
 h1 {
   font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#home h1 {
+  margin-left: -200px;
+}
+
+#main_photo {
+  background: url('../images/eric.jpg');
+  opacity: 0.2;
+  height: 337px;
+  width: 800px;
+  /*position: absolute;*/
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+  width: 20%;
 }
