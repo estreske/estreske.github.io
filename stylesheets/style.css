@@ -10,11 +10,6 @@ p {
   line-height: 1.7;
 }
 
-body {
-  background: url("../images/panorama3.jpg");
-  background-size: cover;
-  background-repeat: none
-}
 #links {
   width: 600px;
   margin-left: 700px;
