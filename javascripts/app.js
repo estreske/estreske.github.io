@@ -32,7 +32,7 @@ $(function(){
   }, 300)}, 900);
 
   setTimeout(function(){
-  $('#resume_link').animate({
+  $('#experience_link').animate({
     opacity: '+=1'
   }, 300)}, 1200);
 
@@ -59,9 +59,9 @@ $(function(){
       }, 1000);
   });
 
-  $("#resume_link").on('click', function(){
+  $("#experience_link").on('click', function(){
     $('html, body').animate({
-        scrollLeft: ($('#resume').offset().left)
+        scrollLeft: ($('#experience').offset().left)
       }, 1000);
   });
 
@@ -70,4 +70,6 @@ $(function(){
         scrollLeft: ($('#contact').offset().left)
       }, 1000);
   });
+
+  
 })

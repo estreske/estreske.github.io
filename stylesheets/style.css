@@ -5,14 +5,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
-p {
+p, li{
   font-family: 'Playfair Display', serif;
   line-height: 1.7;
 }
 
 #links {
-  width: 600px;
-  margin-left: 700px;
+  width: 700px;
+  margin-left: 600px;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
   font-size: 1.5em;
@@ -89,8 +89,12 @@ p {
   color: #009900;
 }
 
-#resume {
-  
+#experience {
+  line-height: 0.8;
+}
+
+span {
+  text-decoration: underline
 }
 
 #contact a {
