@@ -116,8 +116,6 @@ span {
 @media (max-width: 1332px){
   #links {
     position: relative;
-    margin-left: 40%;
-    margin-right: auto;
   }
 
   #nav_bar {
@@ -135,13 +133,23 @@ span {
 @media (max-width: 1100px){
   #links {
     position: none;
-    margin-left: 0px;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  #links li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #links li:first-child {
+    margin-left: 10px;
   }
 
   nav {
-    margin-top: -65px;
+    margin-top: -60px;
     margin-bottom: 20px;
-    height: 70px;
+    height: 45px;
     width: 100%;
     position: fixed;
     background-color: white;
@@ -160,6 +168,19 @@ span {
 
   #experience {
     line-height: initial;
+  }
+
+  #projects div {
+    height: 210px;
+  }
+
+  #projects img {
+    margin-top: 30px;
+  }
+
+  .description {
+    height: 210px;
+    margin-bottom: 100px;
   }
 }
 
