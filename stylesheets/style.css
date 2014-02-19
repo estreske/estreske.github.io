@@ -1,23 +1,37 @@
 /*font-family: 'Muli', sans-serif;*/
 /*font-family: 'Playfair Display', serif;*/
 
+body {
+  background-color: #ecf0f1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pathway Gothic One', sans-serif;
+  color: #2c3e50;
 }
 
 p, li{
   font-family: 'Playfair Display', serif;
   line-height: 1.7;
+  color: #2c3e50;
+}
+
+nav {
+  margin-left: 8%;
+  width: 100%;
+  background-color: #ecf0f1;
+  z-index: 1;
 }
 
 #links {
   width: 700px;
-  margin-left: 600px;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
   font-size: 1.5em;
   opacity: 0;
   position: fixed;
+  background-color: #ecf0f1;
+  z-index: 1;
 }
 
 #links li {
@@ -38,18 +52,26 @@ p, li{
 }
 
 #home h1 {
-  margin-left: -450px;
   font-size: 3em;
+}
+#main_copy {
+  float: left;
+  margin-left: 17%;
+  margin-top: 9%;
 }
 
 #main_photo {
-  background: url('../images/eric.jpg');
-  opacity: 0.2;
-  height: 337px;
-  width: 800px;
+  height: 400px;
+  width: 400px;
   /*position: absolute;*/
-  z-index: -1;
-  margin: 0 auto;
+  float: right;
+  margin-top: 6%;
+  margin-right: 17%;
+}
+
+#main_photo img {
+  height: 400px;
+  width: 400px;
 }
 
 .page {
@@ -81,7 +103,7 @@ p, li{
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 1.3em;
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
 }
 
 .description a:hover {
@@ -102,7 +124,7 @@ span {
 
 #contact a {
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
 }
 
 #contact a:hover {

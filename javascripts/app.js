@@ -10,15 +10,15 @@ $(function(){
   opacity: '+=1'
   }, 1500);
 
-  setTimeout(function(){
-    $('#name').animate({
-  marginLeft: '+=550px'
-  }, 300)}, 1200);
+  // setTimeout(function(){
+  //   $('#name').animate({
+  // marginLeft: '+=10%'
+  // }, 300)}, 1200);
 
-  setTimeout(function(){
-    $('#dev').animate({
-  marginLeft: '+=550px'
-  }, 300)}, 1500);
+  // setTimeout(function(){
+  //   $('#dev').animate({
+  // marginLeft: '+=10%'
+  // }, 300)}, 1500);
 
   setTimeout(function(){
     $('#home_link').animate({
