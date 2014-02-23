@@ -11,16 +11,6 @@ $(function(){
   }, 1500);
 
   setTimeout(function(){
-    $('#main_copy').animate({
-  marginLeft: '+=47%'
-  }, 300)}, 1200);
-
-  setTimeout(function(){
-    $('#main_photo').animate({
-  marginRight: '+=47%'
-  }, 300)}, 1500);
-
-  setTimeout(function(){
     $('#home_link').animate({
     opacity: '+=1'
   }, 300);}, 300)
@@ -46,40 +36,52 @@ $(function(){
   }, 300)}, 1500);
 
 
-  if (windowWidth < 1000) {
+  if (windowWidth < 1100) {
+
+    $("#main_container").css("width", (windowWidth));
 
     $("#home_link").click(function() {
         $('html, body').animate({
-            scrollTop: $("#home").offset().top
+            scrollTop: $("#home").position().top
         }, 1000);
     });
 
     $("#about_link").click(function() {
         $('html, body').animate({
-            scrollTop: $("#about").offset().top
+            scrollTop: $("#about").position().top
         }, 1000);
     });
 
     $("#projects_link").click(function() {
         $('html, body').animate({
-            scrollTop: $("#projects").offset().top
+            scrollTop: $("#projects").position().top
         }, 1000);
     });
 
     $("#experience_link").click(function() {
         $('html, body').animate({
-            scrollTop: $("#experience").offset().top
+            scrollTop: $("#experience").position().top
         }, 1000);
     });
 
     $("#contact_link").click(function() {
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top
+            scrollTop: $("#contact").position().top
         }, 1000);
     });
   }
 
   else {
+
+      setTimeout(function(){
+      $('#main_copy').animate({
+    marginLeft: '+=47%'
+    }, 300)}, 1200);
+
+    setTimeout(function(){
+      $('#main_photo').animate({
+    marginRight: '+=47%'
+    }, 300)}, 1500);
 
     $("#home_link").on('click', function(){
     $('html, body').animate({
