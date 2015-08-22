@@ -28,7 +28,7 @@ body {
 	background-attachment:fixed;
 	padding: 0;
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 	font-size: 100%;
 	color: #73879C;
     font-size: 14px;
@@ -141,7 +141,7 @@ body {
 	display: block;
 	color: #FFF;
 	padding: 12px 30px 12px 30px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -271,7 +271,7 @@ body {
 	top: 0px;
 	left: 0px;
 	text-align: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 }
 .da-slide-current{
 	z-index: 1000;
@@ -310,7 +310,7 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 	font-size:3.5em;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 	text-transform: uppercase;
 }
 .da-slide p{
@@ -319,7 +319,7 @@ body {
 	font-size: 1.4em;
 	height: 80px;
 	overflow: hidden;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	text-align: center;
@@ -339,7 +339,7 @@ body {
 }
 .da-slide .da-link{
 	top:175px; /*depends on p height*/
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'News Cycle', sans-serif;
 	display:inline-block;
 	color:#ffffff;
 	font-size:1em;
