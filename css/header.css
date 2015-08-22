@@ -60,7 +60,7 @@
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #283645;
+    color: rgb(102, 135, 169);
     background-color: rgb(102, 135, 169);
 }
 
