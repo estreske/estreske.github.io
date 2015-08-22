@@ -77,6 +77,11 @@ body {
 	padding:50px 0 0 0;
 	}
 
+	.header_shrink{
+	padding:50px 0 0 0;
+	position: fixed;
+	}
+
 /*.logo {
 	float: left;
 	text-align: center;
@@ -256,7 +261,7 @@ body {
 	-ms-transition: background-position 1s ease-out 0.3s;
 	transition: background-position 1s ease-out 0.3s;
 	text-align:center;
-	margin-top: 0em;
+	margin-top: 3em;
 	}
 
 .da-slide{

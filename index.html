@@ -18,7 +18,8 @@
 	<!-- Owl Carousel Assets -->
 	<link href="css/owl.carousel.css" rel="stylesheet" type='text/css' />
 	<link href="css/slider.css" rel="stylesheet" type='text/css' />
-	<link href="css/style.css" rel="stylesheet" type='text/css' /><!-- change this to your own style -->
+	<link href="css/style.css" rel="stylesheet" type='text/css' />
+	<link href="css/header.css" rel="stylesheet" type='text/css' />
 
 	<!-- Custom styles for this template -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css" />
@@ -40,39 +41,61 @@
   <body>
   	<div class="content" id="home">
   		<div class="wrap">
+			<div class="header_style">
+  			<!-- Navigation -->
+  			    <nav class="navbar navbar-default navbar-fixed-top">
+  			        <div class="container">
+  			            <!-- Brand and toggle get grouped for better mobile display -->
+  			            <div class="navbar-header page-scroll">
+  			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  			                    <span class="sr-only">Toggle navigation</span>
+  			                    <span class="icon-bar"></span>
+  			                    <span class="icon-bar"></span>
+  			                    <span class="icon-bar"></span>
+  			                </button>
+  			                <a class="navbar-brand page-scroll" href="#home">ERIC STRESKE</a>
+  			            </div>
 
-  			<div class="header_style">	
-  				<!-- start h_menu -->
-  				<div class="h_menu">
-  					<ul class="flexy-menu thick orange">
-  						<li> <a href="#home" class="scroll">Home</a></li>
-  						<li><a href="#Portfolio" class="scroll">Projects</a></li>
-  						<li><a href="#skills" class="scroll">Skills</a> </li>
-  						<li><a class="scroll" href="#Experience">Experience</a></li>
-  						<li><a href="#contact" class="scroll">Contact</a></li>
-  					</ul>
-  				</div>
-  				<!-- end h_menu -->
-  				<!-- start h_logo -->
-  				<div class="logo">
-  					<!-- <img src="images/eric.jpg" /> -->
-  					<!-- <h2>ERIC STRESKE</h2> -->
-  				</div>
-  				<div class="clearfix"></div>
-  			</div><!-- header_style -->
+  			            <!-- Collect the nav links, forms, and other content for toggling -->
+  			            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  			                <ul class="nav navbar-nav navbar-right">
+  			                    <li class="hidden">
+  			                        <a href="#page-top"></a>
+  			                    </li>
+  			                    <li>
+  			                        <a class="page-scroll" href="#Portfolio">Projects</a>
+  			                    </li>
+  			                    <li>
+  			                        <a class="page-scroll" href="#skills">Skills</a>
+  			                    </li>
+  			                    <li>
+  			                        <a class="page-scroll" href="#Experience">Experience</a>
+  			                    </li>
+  			                    <li>
+  			                        <a class="page-scroll" href="#contact">Contact</a>
+  			                    </li>
+  			                </ul>
+  			            </div>
+  			            <!-- /.navbar-collapse -->
+  			            <div class="clearfix"></div>
+  			        </div>
+  			        <!-- /.container-fluid -->
+  			    </nav>
+  			  </div>
+
 
   			<!--start-da-slider-->
   			<div class="slider"> 
   				<div id="da-slider" class="da-slider">
   					<div class="da-slide">
-  						<h2>Hello, I am <span class="author"></span></h2>
-  						<p>I'm a fullstack software engineer living in New York City.</p>
-  						<a href="#Portfolio" class="da-link scroll"><span>LEARN MORE</span></a>
+  						<h2>Hello, I am Eric!</h2>
+  						<p>I'm a fullstack software engineer and musician living in New York City.</p>
+  						<a href="#Portfolio" class="da-link page-scroll"><span>LEARN MORE</span></a>
   					</div>
   					<div class="da-slide">
   						<h2>Experienced and Passionate</h2>
   						<p>With the skills needed to build some of the most complicated and scalable rights management and data processing systems that exist in the music industry today.</p>
-  						<a href="#Portfolio" class="da-link scroll"><span>LEARN MORE</span></a>
+  						<a href="#Portfolio" class="da-link page-scroll"><span>LEARN MORE</span></a>
   					</div>
   					<nav class="da-arrows">
   						<span class="da-arrows-prev"></span>
@@ -81,7 +104,7 @@
   				</div>
 
   				<div class="down-arrow">
-  					<a href="#Portfolio" class="scroll" ><span> </span></a>
+  					<a href="#Portfolio" class="page-scroll" ><span> </span></a>
   				</div>	
   			</div>
   			<!--//End-da-slider-->
@@ -455,6 +478,8 @@
 
       <script type="text/javascript" src="js/owl.carousel.js"></script>
       <script type="text/javascript" src="js/wow.min.js"></script>
+      <script src="js/classie.js"></script>
+      <script src="js/AnimatedHeader.js"></script>
 
 
 
