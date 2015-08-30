@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
         var email = $("input[name='email']").val();
         var name = $("input[name='name']").val();
         var subject = $("input[name='subject']").val();
-        var body = $("input[name='contact_body']").val();
+        var body = $("textarea[name='contact_body']").val();
 
         $.ajax({
             url: 'php/send_email',
