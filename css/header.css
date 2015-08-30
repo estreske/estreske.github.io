@@ -1,7 +1,6 @@
 .navbar-default {
     border-color: transparent;
     background-color: #283645;
-    padding:0 0 0 0;
 }
 
 .navbar-default .navbar-brand {
@@ -12,8 +11,7 @@
     z-index: 10;
     font-weight:600;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    font-size:3.5em;
-    text-align: center;
+    font-size: 2em;
     font-family: 'News Cycle', sans-serif;
     text-transform: uppercase;
 }

@@ -22,7 +22,7 @@ nav.horizontal ul li{display: inline-block;}
 img{max-width:100%;}
 
 body {
-	background: #5AA9CE url(../images/bg4.jpg) no-repeat;
+	background: #5AA9CE url(../images/bg7.jpg) no-repeat;
 	background-size: 100%;
 	background-size:cover;
 	background-attachment:fixed;
@@ -318,7 +318,7 @@ body {
 	color: #FFFFFF;
 	font-size: 1.4em;
 	height: 80px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	font-family: 'News Cycle', sans-serif;
 	font-weight: 400;
 	line-height: 29px;
@@ -1228,9 +1228,6 @@ footer ul.contacts li {
 
 @media(min-width: 768px) and (max-width: 991px) {
 
-	.logo{
-		width: 150px;
-	}
 
 	.flexy-menu>li>a {
 	padding: 12px 10px 12px 25px;
@@ -1362,18 +1359,14 @@ footer ul.contacts li {
 		width:95%;
 		}
 
-	.heading{
+/*	.heading{
 		width: 80%;
 		}
-
+*/
 	.header_style {
 		padding: 10px;
 		}
 	
-	.logo{
-		float: none;
-		text-align: center;
-		}
 
 	.logo img{
 		margin-top: 50px;
@@ -1452,6 +1445,7 @@ footer ul.contacts li {
 	.da-slide .da-link {
 		margin-left: 25%;
 		margin-top:40px;
+		border: none;
 		}
 
 	.da-slide h2 {
@@ -1466,16 +1460,30 @@ footer ul.contacts li {
 		top: 105px;
 		padding: 0.5em 2em;
 	}
-	.da-arrows span.da-arrows-next {
+	/*.da-arrows span.da-arrows-next {
 	right: -3px;
 	}
 	.da-arrows span {
 	top: 42%;
+	}*/
+
+	.da-arrows {
+		display: none;
 	}
+
+	.da-slide span {
+		display: none;
+		border-style: none;
+	}
+
+	/*.da-link a {
+		border-style: none;
+	}*/
 	.down-arrow {
-	width: 50px;
+	/*width: 50px;
 	margin: 0 auto;
-	padding: 0.5em 0em;
+	padding: 0.5em 0em;*/
+	display: none;
 	}
 
 
@@ -1697,6 +1705,7 @@ footer ul.contacts li {
 	.da-slide .da-link {
 		margin-left: 20%;
 		margin-top:40px;
+		border: none;
 		}
 
 	.da-slide h2 {
@@ -1711,7 +1720,7 @@ footer ul.contacts li {
 		top: 105px;
 		padding: 0.5em 2em;
 	}
-	.da-arrows span.da-arrows-next {
+	/*.da-arrows span.da-arrows-next {
 	right: -3px;
 	}
 	.da-arrows span {
@@ -1721,6 +1730,25 @@ footer ul.contacts li {
 	width: 50px;
 	margin: 0 auto;
 	padding: 0.5em 0em;
+	}*/
+
+	.da-arrows {
+		display: none;
+	}
+
+	.da-slide span {
+		display: none;
+		border-style: none;
+	}
+
+	/*.da-link a {
+		border-style: none;
+	}*/
+	.down-arrow {
+	/*width: 50px;
+	margin: 0 auto;
+	padding: 0.5em 0em;*/
+	display: none;
 	}
 
 
