@@ -18,34 +18,37 @@ jQuery(document).ready(function ($) {
 
     }
 
-    if (chart.length) {
+    setTimeout(function () {
+        if (chart.length) {
 
-        centerChartsNr();
-        $(window).resize(centerChartsNr);
+            centerChartsNr();
+            $(window).resize(centerChartsNr);
 
-        chartParent.each(function () {
+            chartParent.each(function () {
 
-            $(this).onScreen({
-                doIn: function () {
-                    $(this).find('.chart').easyPieChart({
-                        scaleColor: false,
-                        lineWidth: 18,
-                        size: 178,
-                        trackColor: '#ddd',
-                        lineCap: 'square',
-                        animate: 2000,
-                        onStep: function (from, to, percent) {
-                            $(this.el).find('.percent').text(Math.round(percent));
-                        }
-                    });
-                },
+                $(this).onScreen({
+                    doIn: function () {
+                        $(this).find('.chart').easyPieChart({
+                            scaleColor: false,
+                            lineWidth: 18,
+                            size: 178,
+                            trackColor: '#ddd',
+                            lineCap: 'square',
+                            animate: 2000,
+                            onStep: function (from, to, percent) {
+                                $(this.el).find('.percent').text(Math.round(percent));
+                            }
+                        });
+                    },
+                });
+
+                // $(this).find('.chart').wrapAll('<div class="centertxt" />');
+
             });
 
-            $(this).find('.chart').wrapAll('<div class="centertxt" />');
+        }
+    }, 100);
 
-        });
-
-    }
 
     /* Side mockups fixes */
 

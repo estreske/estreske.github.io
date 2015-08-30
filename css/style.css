@@ -714,25 +714,29 @@ body {
 	padding: 3em 0em;
  	}
 
+.pad-right {
+	padding-right: 32px;
+}
+
 .chart {
     position: relative;
     display: inline-block;
-    margin: 3em;
+    margin: 1em;
     width: 115px;
     height: 115px;
-    /*text-align: center;*/
+    text-align: center;
 	}
 
 .chart canvas {
-    width: 115px;
-    height: 115px;
+    width: 130px !important;
+    height: 130px !important;
 	}
 
 .chart-content {
     position: absolute;
-    top: 0;
+    top: 33px !important;
     left: 0;
-    width: 155%;
+    width: 9.5em;
 	}
 
 .percent,
@@ -1839,4 +1843,25 @@ footer ul.contacts li {
     	margin-bottom: 50px;
 		}
 
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+    .chart-content {
+    	width: 130%;
+    	top: 40px !important;
+		}
+
+		.chart {
+
+    	margin: 2em;
+
+		}
+
+		.chart canvas {
+    width: 145px !important;
+    height: 145px !important;
+	}
 }
