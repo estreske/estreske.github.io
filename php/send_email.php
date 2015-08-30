@@ -7,7 +7,11 @@ $body = $_GET['body'];
 
 $to      = 'estreske@gmail.com';
 $subject = 'New Contact Form Submission from Streske.com';
-$message = "You have received a new contact submission from Streske.com containing the following info:<br><br>Email: " . $email . "<br><br>Name: " . $name . "<br><br>Subject: " . $subject . "<br><br>Body: " . $body;
+$message = "You have received a new contact submission from Streske.com containing the following info:
+Email: " . $email . "
+Name: " . $name . "
+Subject: " . $subject . "
+Body: " . $body;
 $headers = 'From: contact@streske.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
