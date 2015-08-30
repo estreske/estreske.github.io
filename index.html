@@ -445,7 +445,7 @@
 
 		<div class="col-md-8 col-md-offset-2">
 
-			<form id="contact-form" action="http://streske.synology.me:8080/test.php">
+			<form id="contact-form" action="php/send_email.php" method="GET">
 
 				<ul> 
 					<!-- <li><h4>SEND HIM AN EMAIL</h4></li> -->
@@ -465,7 +465,7 @@
 						<textarea class="form-control" name="body" placeholder=""></textarea>
 						<div class="clearfix"></div>
 					</li> 
-					<div class="send"><a onClick="document.getElementById('contact-form').submit();">SEND</a></div>
+					<div id="contact_send" class="send"><a >SEND</a></div>
 				</ul>
 			</form>
 		</div><!-- col-md-6-->

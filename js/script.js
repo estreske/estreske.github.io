@@ -2,6 +2,28 @@
 
 jQuery(document).ready(function ($) {
 
+    // contact form send
+    $('#contact_send').click(function(e) {
+        e.preventDefault();
+        var email = $("input[name='email']").val();
+        var name = $("input[name='name']").val();
+        var subject = $("input[name='subject']").val();
+        var body = $("input[name='body']").val();
+
+        $.ajax({
+            url: 'php/send_email',
+            type: "GET",
+            data: {
+                email: email,
+                name: name,
+                subject: subject,
+                body: body,
+            },
+            success: function (data) {
+                console.log('sucess');
+            }
+        });
+    });
 
 
     /* Chart numbers absolute centering */
