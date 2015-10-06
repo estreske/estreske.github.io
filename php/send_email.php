@@ -5,7 +5,7 @@ $name = $_GET['name'];
 $from_subject = $_GET['subject'];
 $from_body = $_GET['body'];
 
-$to      = 'estreske@gmail.com';
+$to      = 'eric@streske.com';
 $subject = 'New Contact Form Submission from Streske.com';
 $message = "You have received a new contact submission from Streske.com containing the following info:
 Email: " . $email . "
