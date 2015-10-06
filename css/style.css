@@ -821,7 +821,7 @@ body {
 	}
 
 .timeline-label {
-	padding: 6em 0em;
+	/*padding: 6em 0em;*/
 	}
 
 .timeline .experience {
@@ -859,6 +859,11 @@ body {
     text-align: center;
     font-weight: 700;
 	}
+.timeline-selected {
+	  background-color: white;
+    padding: 7px;
+    border-radius: 17px;
+}
 
 .timeline .experience-img,
 .timeline .experience-info,
@@ -904,7 +909,7 @@ body {
 
 
 .row-content2 {
-	padding: 6% 8%;
+	/*padding: 6% 8%;*/
 	}
 .column.six, .column.half, .column.threesixths, .column.twofourths {
 	width: 40%;
@@ -922,7 +927,7 @@ body {
 	}
 
 .column.six, .column.half, .column.threesixths, .column.twofourths {
-	width: 48%;
+	width: 44%;
 	}
 
 .column.last, .column.reset {
