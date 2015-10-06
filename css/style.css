@@ -69,6 +69,11 @@ body {
 	padding-bottom: 10px;
 	}
 
+	#email_error {
+		color: white;
+		font-weight: bold;
+	}
+
 
 /*===================================================================================*/
 /*	HERO

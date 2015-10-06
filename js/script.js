@@ -2,9 +2,26 @@
 
 jQuery(document).ready(function ($) {
 
+    function isValidEmail(email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+      return emailReg.test(email);
+    }
+
+    $('#contact_email').focusin(function(){
+        $('#email_error').empty();
+    });
+
+    $('#contact_email').focusout(function(){
+        var emailResult = isValidEmail($('#contact_email').val());
+        if (!emailResult) {
+            $('#email_error').append("Please Enter a Valid Email Address.");
+        }
+    });
+
     // contact form send
     $('#contact_send').click(function(e) {
         e.preventDefault();
+        $('#contact_send').html("<a><i class='fa fa-circle-o-notch fa-spin'></i></a>");
         var email = $("input[name='email']").val();
         var name = $("input[name='name']").val();
         var subject = $("input[name='subject']").val();
@@ -20,7 +37,12 @@ jQuery(document).ready(function ($) {
                 body: body,
             },
             success: function (data) {
-                console.log('sucess');
+                if (data == "Mail Could not be sent") {
+                    $('#send_email_error').append("Your email could not be sent successfully.  Please contact Eric directly at estreske@gmail.com.");
+                } else {
+                    $('#contact_send').html("<a disabled><i class='fa fa-thumbs-up'></i></a>");
+                    $('#send_email_error').append("Your email was sent successfully.  Thank you!");
+                }
             }
         });
     });
