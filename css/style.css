@@ -74,6 +74,11 @@ body {
 		font-weight: bold;
 	}
 
+	#send_email_error {
+		color: white;
+		font-weight: bold;
+	}
+
 
 /*===================================================================================*/
 /*	HERO

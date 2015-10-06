@@ -38,6 +38,7 @@ jQuery(document).ready(function ($) {
             },
             success: function (data) {
                 if (data == "Mail Could not be sent") {
+                    $('#contact_send').html("<a disabled><i class='fa fa-thumbs-down'></i></a>");
                     $('#send_email_error').append("Your email could not be sent successfully.  Please contact Eric directly at estreske@gmail.com.");
                 } else {
                     $('#contact_send').html("<a disabled><i class='fa fa-thumbs-up'></i></a>");
